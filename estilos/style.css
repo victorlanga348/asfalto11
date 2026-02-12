@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.inicio{
+    height: 500px;
+    background: gray url("../imagens/capa-do-site/Gemini_Generated_Image_v2g1v8v2g1v8v2g1.png") no-repeat center center;
+
+    background-size: cover;
+    box-shadow: 2px 0px 10px black;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(211, 211, 211, 0.5);
+}
+
+h1{
+    font-size: 2em;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hamburguer{
+    width: 550px;
+    height: 300px;
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalogo{
+    width: 550px;
+    height: 300px;
+    margin: 0px 0px 50px 0px;
+}
+
+.contacto{
+    height: 200px;
+    background-color: rgb(65, 65, 65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    gap: 5px;
+    font-size: 1.5em;
+}
+
+.imagem{
+    height: 80%;
+    background: no-repeat center center;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.imagem1{
+    background-image: url("../imagens/hamburguer/2hamburguer-ovo-queijo-batatas-saladaDeRepolho.png");
+}
+.imagem2{
+    background-image: url("../imagens/sandes-azinhas-batatas/rachel-ovo-queijo-batatas.png");
+}
+.imagem3{
+    background-image: url("../imagens/bebidas/agua-pequena.png");
+}
+.imagem4{
+    background-image: url("../imagens/doces/pastilha.png");
+}
+
+.link{
+    text-decoration: none;
+    background-color: brown;
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 20%;
+    border-radius: 0px 0px 20px 20px;
+    padding: 0px 30px 0px 0px;
+}
+.link:hover{
+    opacity: 0.8;
+}
+.link:active{
+    opacity: 0.6;
+}
