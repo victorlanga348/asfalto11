@@ -7,13 +7,7 @@
     box-sizing: border-box;
 }
 
-.inicio{
-    height: 500px;
-    background: gray url("../imagens/capa-do-site/Gemini_Generated_Image_v2g1v8v2g1v8v2g1.png") no-repeat center center;
-
-    background-size: cover;
-    box-shadow: 2px 0px 10px black;
-}
+/* gerais */
 
 header{
     display: flex;
@@ -27,13 +21,23 @@ h1{
     font-size: 2em;
 }
 
-.menu{
+/* especificas */
+
+section.inicio{
+    height: 500px;
+    background: gray url("../imagens/capa-do-site/Gemini_Generated_Image_v2g1v8v2g1v8v2g1.png") no-repeat center center;
+
+    background-size: cover;
+    box-shadow: 2px 0px 10px black;
+}
+
+section.menu{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.hamburguer{
+.comidas{
     width: 85%;
     height: 300px;
     margin: 50px 0px;
@@ -49,19 +53,6 @@ h1{
     margin: 0px 0px 50px 0px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.671);
-}
-
-.contacto{
-    height: 200px;
-    background-color: rgb(65, 65, 65);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    gap: 5px;
-    font-size: 1.5em;
 }
 
 .imagem{
@@ -101,4 +92,192 @@ h1{
 }
 .link:active{
     opacity: 0.6;
+}
+
+section.contacto{
+    height: 200px;
+    background-color: rgb(65, 65, 65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    gap: 5px;
+    font-size: 1.5em;
+}
+
+/* pagina do menu */
+
+/* hamburguer */
+
+header > a.pg-principal{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+header > a.pg-principal:hover{
+    text-decoration: underline;
+}
+
+.imagem11{
+    background-image: url("../imagens/hamburguer/hamburguer-ovo-saladaDeRepolho.png");
+}
+.imagem12{
+    background-image: url("../imagens/hamburguer/hamburguer-queijo-saladaDeRepolho.png");
+}
+.imagem13{
+    background-image: url("../imagens/hamburguer/hamburguer-ovo-batatas-saladaDeRepolho.png");
+}
+.imagem14{
+    background-image: url("../imagens/hamburguer/hamburguer-ovo-queijo-saladaDeRepolho.png");
+}
+.imagem15{
+    background-image: url("../imagens/hamburguer/hamburguer-ovo-queijo-batatas-saladaDeRepolho.png");
+}
+.imagem16{
+    background-image: url("../imagens/hamburguer/2hamburguer-ovo-queijo-saladaDeRepolho.png");
+}
+.imagem17{
+    background-image: url("../imagens/hamburguer/2hamburguer-ovo-queijo-batatas-saladaDeRepolho.png");
+}
+
+div.detalhes{
+    height: 25%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.detalhes > p{
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p.preco{
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.pg-hmb{
+    height: 350px;
+}
+
+/* sandes, azinhas e batatas */
+
+.imagem21{
+    background-image: url("../imagens/sandes-azinhas-batatas/rachel-queijo.png");
+}
+.imagem22{
+    background-image: url("../imagens/sandes-azinhas-batatas/rachel-queijo-batatas.png");
+}
+.imagem23{
+    background-image: url("../imagens/sandes-azinhas-batatas/rachel-ovo.png");
+}
+.imagem24{
+    background-image: url("../imagens/sandes-azinhas-batatas/rachel-ovo-batatas.png");
+}
+.imagem25{
+    background-image: url("../imagens/sandes-azinhas-batatas/rachel-batatas.png");
+}
+.imagem26{
+    background-image: url("../imagens/sandes-azinhas-batatas/rachel-ovo-queijo.png");
+}
+.imagem27{
+    background-image: url("../imagens/sandes-azinhas-batatas/rachel-ovo-queijo-batatas.png");
+}
+.imagem28{
+    background-image: url("../imagens/sandes-azinhas-batatas/sandes-de-palone.png");
+}
+.imagem29{
+    background-image: url("../imagens/sandes-azinhas-batatas/sandes-de-ovo.png");
+}
+.imagem210{
+    background-image: url("../imagens/sandes-azinhas-batatas/azinhas.png");
+}
+.imagem211{
+    background-image: url("../imagens/sandes-azinhas-batatas/azinhas.png");
+}
+.imagem212{
+    background-image: url("../imagens/sandes-azinhas-batatas/batatas.png");
+}
+
+/* bebidas */
+
+.imagem31{
+    background-image: url("../imagens/bebidas/refresco.png");
+    background-size: contain;
+}
+.imagem32{
+    background-image: url("../imagens/bebidas/refresco-pequeno.png");
+    background-size: contain;
+}
+.imagem33{
+    background-image: url("../imagens/bebidas/agua-pequena.png");
+    background-size: contain;
+}
+.imagem34{
+    background-image: url("../imagens/bebidas/agua-grande.png");
+    background-size: contain;
+}
+.imagem35{
+    background-image: url("../imagens/bebidas/compal.png");
+    background-size: contain;
+}
+.imagem36{
+    background-image: url("../imagens/bebidas/capy.png");
+    background-size: contain;
+}
+.imagem37{
+    background-image: url("../imagens/bebidas/2m-txoti.png");
+    background-size: contain;
+}
+.imagem38{
+    background-image: url("../imagens/bebidas/2m-lata.png");
+    background-size: contain;
+}
+.imagem39{
+    background-image: url("../imagens/bebidas/savana.png");
+    background-size: contain;
+}
+.imagem310{
+    background-image: url("../imagens/bebidas/pretinha.png");
+    background-size: contain;
+}
+.imagem311{
+    background-image: url("../imagens/bebidas/lite.png");
+    background-size: contain;
+}
+.imagem312{
+    background-image: url("../imagens/bebidas/impala-lata.png");
+    background-size: contain;
+}
+.imagem313{
+    background-image: url("../imagens/bebidas/my-fair.png");
+    background-size: contain;
+}
+.imagem314{
+    background-image: url("../imagens/bebidas/heiniken-pequena.png");
+    background-size: contain;
+}
+.imagem315{
+    background-image: url("../imagens/bebidas/txilar-lata.png");
+    background-size: contain;
+}
+
+
+/* doces */
+.imagem41{
+    background-image: url("../imagens/doces/pastilha.png");
+    background-size: contain;
+}
+.imagem42{
+    background-image: url("../imagens/doces/pipocas.png");
+    background-size: contain;
+}
+.imagem43{
+    background-image: url("../imagens/doces/paezinho.png");
+    background-size: contain;
 }
