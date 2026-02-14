@@ -9,17 +9,25 @@
 
 /* gerais */
 
+html, body{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgba(211, 211, 211, 0.5);
+    background-color: brown;
+    color: white;
 }
 
 h1{
     font-size: 2em;
 }
+
+
 
 /* especificas */
 
@@ -28,23 +36,30 @@ section.inicio{
     background: gray url("../imagens/capa-do-site/Gemini_Generated_Image_v2g1v8v2g1v8v2g1.png") no-repeat center center;
 
     background-size: cover;
-    box-shadow: 2px 0px 10px black;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
+    user-select: none;
 }
 
 section.menu{
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: inset 0 -15px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+section.menu > h1{
+    margin: 20px;
+    user-select: none;
 }
 
 .comidas{
     width: 85%;
     height: 300px;
-    margin: 50px 0px;
+    margin: 0px 0px 50px 0px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.671);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .catalogo{
@@ -52,7 +67,7 @@ section.menu{
     height: 300px;
     margin: 0px 0px 50px 0px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.671);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .imagem{
@@ -108,6 +123,32 @@ section.contacto{
 }
 
 /* pagina do menu */
+
+
+header.cabecalho-menu{
+    position: sticky;
+    top: 0;
+    background-color: lightgray;
+    margin: 0px 0px 40px 0px;
+    user-select: none;
+}
+
+a#cabecalho{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 10px;
+}
+
+a#cabecalho:hover{
+    text-decoration: none;
+}
+
+span.material-symbols-outlined{
+    border-radius: 50%;
+    padding: 3px;
+    font-weight: bolder;
+}
 
 /* hamburguer */
 
