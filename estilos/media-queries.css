@@ -95,4 +95,43 @@
         gap: 50px;
         margin-left: 50px;
     }
+
+    .contacto-do-pc{
+        margin: 0;
+    }
+
+    section.contacto-pc{
+        width: 100vw;
+        height: calc(100vh - 50px);
+        background-color: rgb(65, 65, 65);
+    }
+
+    div.detalhes-do-contacto{
+        width: 100vw;
+        height: calc(100vh - 50px);
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        color: white;
+        user-select: none;
+    }
+
+    div.redes{
+        display: flex;
+        gap: 60px;
+    }
+
+    img{
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    div.mpesa{
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 20px;
+        color: white;
+    }
 }
