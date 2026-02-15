@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    section.inicio{
+        height: 700px;
+    }
+
+    section.menu{
+        flex-flow: row wrap;
+        gap: 30px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    h1.palavra-menu{
+        display: none;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 992px) {
+
+}
