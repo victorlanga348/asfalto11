@@ -63,7 +63,7 @@ section.menu > h1{
     display: flex;
     flex-flow: column nowrap;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .imagem{
@@ -148,7 +148,7 @@ header > a.pg-principal{
 
 header > a.pg-principal:hover{
     text-decoration: underline;
-}
+} 
 
 .imagem11{
     background-image: url("../imagens/hamburguer/hamburguer-ovo-saladaDeRepolho.png");
