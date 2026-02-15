@@ -10,7 +10,7 @@
         flex-flow: row wrap;
         gap: 30px;
         justify-content: center;
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     h1.palavra-menu{
@@ -21,4 +21,78 @@
 /* desktop */
 @media screen and (min-width: 992px) {
 
+    body.principal{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+    body.pg-menu{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+    header.voltar-do-menu{
+        position: sticky;
+        top: 0;
+        background-color:lightgray;
+        user-select: none;
+    }
+
+    header{
+        display: flex;
+        align-items: flex-start;
+        height: 60px;
+    }
+
+    section.inicio{
+        height: 100%;
+    }
+
+    menu.contacte-nos{
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 20px;
+        font-weight: bold;
+    }
+
+    menu > a{
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        border-radius: 10px;
+    }
+
+    menu > a:hover{
+        background-color: rgb(107, 28, 28);
+    }
+
+    menu > a:active{
+        opacity: 0.6;
+    }
+
+    menu > p{
+        padding: 10px;
+    }
+
+    section.menu{
+        display: none;
+    }
+
+    section.contacto{
+        display: none;
+    }
+
+    h1{
+        text-align: center;
+        margin: 0px 0px 50px 10px;
+    }
+
+    div.lanche-do-menu{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 50px;
+        margin-left: 50px;
+    }
 }
