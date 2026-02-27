@@ -29,6 +29,10 @@ cores
     --texto-destaque: #8b4513;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--fundo-principal);
     color: var(--texto);
@@ -41,6 +45,7 @@ header img{
     object-fit: cover;
     object-position: left top;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.747);
+    border-radius: 0px 0px 10px 10px;
 }
 
 main{
@@ -54,6 +59,14 @@ main h1{
     margin-top: 10px;
     color: #c41e3a;
     text-shadow: 1px 1px 3px #0000007a;
+}
+
+main div.perfil{
+    grid-column: 2;
+}
+
+main div.promocoes{
+    grid-column: 2;
 }
 
 main div.menu{
@@ -96,6 +109,50 @@ main a:hover{
     background-color: #c41e3a;
     color: white;
     font-weight: bold;
+}
+
+main a:active{
+    opacity: 0.6;
+}
+
+section.contacto{
+    background-color: #2b2b2b;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 10px;
+}
+
+section.contacto div.horarios{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section.contacto div.redes-sociais{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.redes-especificas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color .5s;
+}
+
+.redes-especificas:hover{
+    background-color: #111111;
+}
+
+.redes-especificas:active{
+    opacity: 0.6;
 }
 
 footer{
