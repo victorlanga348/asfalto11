@@ -32,12 +32,12 @@ cores
 html{
     scroll-behavior: smooth;
     margin-bottom: 65px;
+    user-select: none;
 }
 
 body{
     background-color: var(--fundo-principal);
     color: var(--texto);
-    overflow-x: hidden;
 }
 
 header img{
@@ -203,14 +203,14 @@ footer.principal nav div:hover{
 header.header-do-menu{
     margin: 10px;
     text-align: center;
-    width: 500px;
+    width: 450px;
     height: 100px;
 }
 
 header.header-do-menu img{
     width: 40%;
     height: 100%;
-    border-radius: 60%;
+    border-radius: 60% 35%;
 }
 
 main.menu-cardapio{
