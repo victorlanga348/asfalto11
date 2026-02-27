@@ -260,3 +260,15 @@ footer.back {
     border: none;
     cursor: pointer;
 }
+
+footer.back:hover{
+    opacity: .8;
+}
+
+footer.back:active{
+    opacity: .6;
+}
+
+footer.back a{
+    color: #f5f5f5;
+}
