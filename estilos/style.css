@@ -31,12 +31,12 @@ cores
 
 html{
     scroll-behavior: smooth;
+    position: relative;
 }
 
 body{
     background-color: var(--fundo-principal);
     color: var(--texto);
-    position: relative;
 }
 
 header img{
