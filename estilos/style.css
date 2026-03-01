@@ -198,7 +198,11 @@ footer.principal nav div:hover{
     cursor: pointer;
 }
 
-/* pg menu hamburguer */
+/* pgs do menu */
+
+html.pg-do-menu{
+    margin-bottom: 30px;
+}
 
 header.header-do-menu{
     margin: 10px;
