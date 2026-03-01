@@ -54,7 +54,7 @@ main{
     grid-template-columns: auto 90% auto;
 }
 
-main h1{
+main h1, main h2{
     grid-column: 2;
     text-align: center;
     margin-top: 10px;
@@ -283,7 +283,7 @@ header.header-de-cada-lanche img{
     height: 350px;
 }
 
-main h1, main p{
+main h2, main p{
     grid-column: 2;
 }
 
