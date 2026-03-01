@@ -277,7 +277,7 @@ footer.back a{
 
 /* pg de cada lanche */
 
-header.header-de-cada-lanche img{
+header.header-de-cada-lanche img.img-de-cada-lanche{
     object-fit: cover;
     object-position: left bottom;
     height: 350px;
@@ -296,4 +296,8 @@ main p.preco{
     font-weight: bold;
     display: flex;
     justify-content: flex-end;
+}
+
+img.img-de-bebidas{
+    object-position: center top;
 }
