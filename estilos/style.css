@@ -53,6 +53,9 @@ header img {
 main {
     display: grid;
     grid-template-columns: auto 90% auto;
+}
+
+main.pg-inicial, main.main-de-cada-lanche {
     animation: slideup 1s ease-out;
 }
 
@@ -249,6 +252,14 @@ main.menu-cardapio img {
     user-select: none;
 }
 
+div.pg-do-menu-1 {
+    animation: left-enter 1s ease-out;
+}
+
+div.pg-do-menu-2 {
+    animation: right-enter 1s ease-out;
+}
+
 footer.back {
     user-select: none;
     position: fixed;
@@ -279,6 +290,10 @@ footer.back:active {
 
 footer.back a {
     color: #f5f5f5;
+}
+
+footer.back {
+    animation: button-back-enter 1s ease-out;
 }
 
 /* pg de cada lanche */
@@ -342,6 +357,42 @@ img.img-de-bebidas {
     }
 
     to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes left-enter {
+    from{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes right-enter {
+    from{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes button-back-enter { /* animacao do footer de voltar */
+    from{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    to{
         transform: translateY(0);
         opacity: 1;
     }
