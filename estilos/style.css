@@ -23,10 +23,10 @@ cores
 
 .root {
     --fundo-principal: #f5f5f5;
-    --cor-primaria: #111111;
     --texto-principal: #c41e3a;
+    --texto-secundario: #111111;
     --fundo-secundario: #2b2b2b;
-    --texto-destaque: #8b4513;
+    --fundo-destaque: #8b4513;
 }
 
 html {
@@ -50,34 +50,10 @@ header img {
     animation: slidedown 1s ease-out;
 }
 
-@keyframes slidedown {
-    from {
-        transform: translateY(-200px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 main {
     display: grid;
     grid-template-columns: auto 90% auto;
     animation: slideup 1s ease-out;
-}
-
-@keyframes slideup {
-    from {
-        transform: translateY(250px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
 }
 
 main h1,
@@ -194,7 +170,7 @@ footer.principal {
     padding: 8px;
     z-index: 1;
     padding-bottom: env(safe-area-inset-bottom);
-    animation: slideup 1s ease-out;
+    animation: slideup-footer 1s ease-out;
 }
 
 footer.principal nav {
@@ -331,4 +307,42 @@ main p.preco {
 
 img.img-de-bebidas {
     object-position: center top;
+}
+
+/* animacoes */
+
+@keyframes slidedown { /* animacao do header */
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideup { /* animacao do main */
+    from {
+        transform: translateY(250px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideup-footer { /* animacao do footer */
+    from {
+        transform: translateY(250px);
+        opacity: .8;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
