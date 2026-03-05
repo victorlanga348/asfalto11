@@ -453,6 +453,7 @@ img.img-de-bebidas {
 
     div.telas-maiores {
         display: block;
+        height: 60vh;
     }
 
     a.lanches-especificos {
