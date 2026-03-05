@@ -252,6 +252,10 @@ main.menu-cardapio img {
     user-select: none;
 }
 
+img.imagem-de-outra-tela {
+    display: none;
+}
+
 div.pg-do-menu-1 {
     animation: left-enter 1s ease-out;
 }
@@ -395,5 +399,89 @@ img.img-de-bebidas {
     to{
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    body.pg-de-telas-maiores{
+        background-color: lightgray;
+        height: 100vh;
+    }
+
+    main.pg-inicial{
+        grid-template-columns: auto 1fr 1fr auto;
+        gap: 20px;
+    }
+
+    main.pg-inicial div.perfil, main.pg-inicial div.promocoes, main.pg-inicial h1#catalogo{
+        grid-column: 2/4;
+    }
+
+    main.pg-inicial div.menu1{
+        grid-column: 2;
+    }
+
+    main.pg-inicial div.menu2{
+        grid-column: 3;
+    }
+
+    div.telas-maiores {
+        display: block;
+    }
+
+    a.lanches-especificos {
+        display: none;
+    }
+
+    main.menu-cardapio{
+        display: block;
+    }
+
+    div.lanche h2.nome-do-lanche{
+        display: none;
+    }
+
+    div.telas-maiores{
+        display: flex;
+    }
+
+    div.pg1{
+        flex-direction: row;
+    }
+
+    div.pg2{
+        flex-direction: row-reverse;
+    }
+
+    div.telas-maiores img{
+        width: 50%;
+        border-radius: 0px;
+    }
+
+    div.telas-maiores .info{
+        width: 50%;
+        padding: 10px;
+        background-color: rgba(211, 211, 211, 0.705);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    footer.back{
+        bottom: 40px;
+    }
+
+    footer.principal nav{
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    div.telas-maiores {
+        display: block;
+    }
+
+    a.lanches-especificos {
+        display: none;
     }
 }
