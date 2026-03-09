@@ -264,6 +264,10 @@ div.pg-do-menu-2 {
     animation: right-enter 1s ease-out;
 }
 
+div.telas-maiores {
+    display: none;
+}
+
 footer.back {
     user-select: none;
     position: fixed;
