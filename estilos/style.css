@@ -508,6 +508,44 @@ img.img-de-bebidas {
 }
 
 @media screen and (min-width: 992px) {
+    header#perfil-inicial{
+        display: none;
+    }
+
+    /* header#perfil-do-pc{
+        background-color: #61300d;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    div.scrool-content{
+        display: flex;
+        width: 200%;
+        animation: scrool 20s linear infinite;
+    }
+
+    div.scrool-content img{
+        object-fit: cover;
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+    }
+
+    @keyframes scrool {
+        0%{
+            transform: translate(0px);
+        }
+
+        100%{
+            transform: translate(-50px);
+        }
+        
+    } */
+
+    main.pg-inicial{
+        display: none;
+    }
+
     div.telas-maiores {
         display: block;
     }
