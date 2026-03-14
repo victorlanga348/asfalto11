@@ -50,6 +50,10 @@ header img {
     animation: slidedown 1s ease-out;
 }
 
+header.pc{
+    display: none;
+}
+
 main {
     display: grid;
     grid-template-columns: auto 90% auto;
@@ -410,6 +414,10 @@ img.img-de-bebidas {
     body.pg-de-telas-maiores{
         background-color: lightgray;
         height: 100vh;
+    }
+
+    header.pc{
+        display: none;
     }
 
     main.pg-inicial{
