@@ -512,36 +512,6 @@ img.img-de-bebidas {
         display: none;
     }
 
-    /* header#perfil-do-pc{
-        background-color: #61300d;
-        overflow: hidden;
-        width: 100%;
-    }
-
-    div.scrool-content{
-        display: flex;
-        width: 200%;
-        animation: scrool 20s linear infinite;
-    }
-
-    div.scrool-content img{
-        object-fit: cover;
-        width: 300px;
-        height: 200px;
-        padding: 20px;
-    }
-
-    @keyframes scrool {
-        0%{
-            transform: translate(0px);
-        }
-
-        100%{
-            transform: translate(-50px);
-        }
-        
-    } */
-
     main.pg-inicial{
         display: none;
     }
@@ -552,5 +522,131 @@ img.img-de-bebidas {
 
     a.lanches-especificos {
         display: none;
+    }
+
+    section.contacto{
+        display: none;
+    }
+
+    footer.principal{
+        display: none;
+    }
+
+    /* mudancas oficiais */
+
+    html.princi{
+        margin: 0;
+        height: 100vh;
+        overflow-y: hidden;
+    }
+
+    header.pc menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #8b4513;
+        color: white;
+        padding: 0px 20px;
+        height: 60px;
+    }
+
+    header.pc nav{
+        display: flex;
+    }
+
+    header.pc div{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 0px 5px;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    header.pc a{
+        text-decoration: none;
+        color: white;
+    }
+
+    header.pc div:hover{
+        background-color: #61300d;
+        transition: background-color .5s;
+    }
+
+    header.pc div:active{
+        opacity: .6;
+    }
+
+    section.pc{
+        height: 90vh;
+    }
+
+    section.pc img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+
+    /* menu */
+
+    body.pg-de-telas-maiores{
+        background-color: lightgray;
+    }
+
+    header.header-do-menu{
+        width: 500px;
+        margin: 20px auto;
+    }
+
+    main.menu-cardapio{
+        display: block;
+        width: 100%;
+    }
+
+    main div.telas-maiores{
+        display: flex;
+    }
+
+    div.telas-maiores img{
+        width: 50%;
+        border-radius: 0px;
+        background-color: white;
+    }
+
+    div.info{
+        padding: 15px;
+        width: 50%;
+    }
+
+    main div.pg2{
+        flex-direction: row-reverse;
+    }
+
+    main.menu-cardapio h1{
+        margin: 20px;
+    }
+
+    /* contacto */
+    body.contact{
+        background-color: #2b2b2b;
+    }
+
+    main.contacto{
+        margin: 30px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    main.contacto div.redes-sociais{
+        display: flex;
+        flex-direction: row;
+        width: 150px;
+    }
+
+    main.contacto div.redes-especificas{
     }
 }
