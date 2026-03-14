@@ -548,6 +548,10 @@ img.img-de-bebidas {
         overflow-y: hidden;
     }
 
+    header.pc{
+        display: block;
+    }
+
     header.pc menu{
         display: flex;
         justify-content: space-between;
@@ -566,7 +570,7 @@ img.img-de-bebidas {
         display: flex;
         flex-direction: column;
         padding: 10px;
-        margin: 0px 5px;
+        margin: 0px 10px;
         align-items: center;
         border-radius: 5px;
     }
@@ -586,7 +590,7 @@ img.img-de-bebidas {
     }
 
     section.pc{
-        height: 90vh;
+        height: calc(100% - 60px);
     }
 
     section.pc img{
@@ -653,8 +657,5 @@ img.img-de-bebidas {
         display: flex;
         flex-direction: row;
         width: 150px;
-    }
-
-    main.contacto div.redes-especificas{
     }
 }
