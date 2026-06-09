@@ -226,6 +226,10 @@ header.header-do-menu img {
     border-radius: 60% 35%;
 }
 
+section.pc{
+    display: none;
+}
+
 main.menu-cardapio {
     margin-top: 10px;
     display: grid;
@@ -420,6 +424,10 @@ img.img-de-bebidas {
         display: none;
     }
 
+    section.pc{
+        display: none;
+    }
+
     main.pg-inicial{
         grid-template-columns: auto 1fr 1fr auto;
         gap: 20px;
@@ -590,6 +598,7 @@ img.img-de-bebidas {
     }
 
     section.pc{
+        display: block;
         height: calc(100% - 60px);
     }
 
